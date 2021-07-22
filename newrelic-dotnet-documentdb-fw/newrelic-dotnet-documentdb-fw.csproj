@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="NewRelic.Agent.Extensions">
-      <HintPath>..\..\..\..\Program Files\New Relic\.NET Agent\netframework\NewRelic.Agent.Extensions.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files\New Relic\.NET Agent\netframework\NewRelic.Agent.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
