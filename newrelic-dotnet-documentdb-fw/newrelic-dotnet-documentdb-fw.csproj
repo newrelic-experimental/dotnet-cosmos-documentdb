@@ -48,15 +48,11 @@
     <Compile Include="Wrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Custom.Providers.Wrapper.DocumentClient.xml" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy /Y /R $(TargetPath) "C:\Program Files\New Relic\.NET Agent\netframework\Extensions"
 
-xcopy /Y  $(ProjectDir)Custom.Providers.Wrapper.DocumentClient.xml "C:\ProgramData\New Relic\.NET Agent\Extensions\netframework"
-
-xcopy /Y C:\dev\dotnet\extensions\newrelic-dotnet-documentdb\bin\Debug\Custom.Providers.Wrapper.DocumentDb.pdb "C:\Program Files\New Relic\.NET Agent\netframework\Extensions"</PostBuildEvent>
+xcopy /Y  $(ProjectDir)\..\Custom.Providers.Wrapper.DocumentClient.xml "C:\ProgramData\New Relic\.NET Agent\Extensions\netframework"
+</PostBuildEvent>
   </PropertyGroup>
 </Project>

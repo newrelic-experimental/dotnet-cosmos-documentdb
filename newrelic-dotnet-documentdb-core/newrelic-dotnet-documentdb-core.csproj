@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Custom.Providers.Wrapper.DocumentDb</RootNamespace>
+    <AssemblyName>Custom.Providers.Wrapper.DocumentDb</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="NewRelic.Agent.Extensions">
+      <HintPath>..\..\..\..\..\Program Files\New Relic\.NET Agent\netcore\NewRelic.Agent.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
