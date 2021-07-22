@@ -1,41 +1,39 @@
 [![New Relic Experimental header](https://github.com/newrelic/opensource-website/raw/master/src/images/categories/Experimental.png)](https://opensource.newrelic.com/oss-category/#new-relic-experimental)
 
-# [Project Name] [build badges go here when available]
+# New Relic .Net Agent Instrumentation for Azure CosmosDB DocumentClient
 
->[Brief description - what is the project and value does it provide? How often should users expect to get releases? How is versioning set up? Where does this project want to go?]
+This New Relic .Net agent instrumentation package provides instrumentation for Azure CosmosDB DocumentClient class. API calls made by the clients to MS Azure CosmosDB's DocumentDB database are captured as database calls in New Relic.
+
 
 ## Installation
 
-> [Include a step-by-step procedure on how to get your code installed. Be sure to include any third-party dependencies that need to be installed separately]
+1. Drop the extension dll in the newrelic agent's Program Files "extensions" folder.
 
-## Getting Started
+```cmd
+   copy Custom.Providers.Wrapper.DocumentDb.dll C:\Program Files\New Relic\.NET Agent\netframework\Extensions
+```
 
->[Simple steps to start working with the software similar to a "Hello World"]
+2. Drop the extension xml in the newrelic agent ProgramData "extensions" folder.
 
-## Usage
+```cmd
+   copy Custom.Providers.Wrapper.DocumentClient.xml C:\ProgramData\New Relic\.NET Agent\netframework\Extensions
+```
 
->[**Optional** - Include more thorough instructions on how to use the software. This section might not be needed if the Getting Started section is enough. Remove this section if it's not needed.]
+***
+**Note: The XML file must be dropped into ProgramData's extension folder whereas DLL file must be dropped into Program Files's extension folder**
+***
 
-## Building
+3. Restart your application after adding the extension files and configurations.
 
->[**Optional** - Include this section if users will need to follow specific instructions to build the software from source. Be sure to include any third party build dependencies that need to be installed separately. Remove this section if it's not needed.]
+4. Check your results in New Relic UI.
 
-## Testing
-
->[**Optional** - Include instructions on how to run tests if we include tests with the codebase. Remove this section if it's not needed.]
 
 ## Support
 
 New Relic has open-sourced this project. This project is provided AS-IS WITHOUT WARRANTY OR DEDICATED SUPPORT. Issues and contributions should be reported to the project here on GitHub.
 
->[Choose 1 of the 2 options below for Support details, and remove the other one.]
+We encourage you to bring your experiences and questions to the [Explorers Hub](https://discuss.newrelic.com) where our community members collaborate on solutions and new ideas.
 
->[Option 1 - no specific thread in Community]
->We encourage you to bring your experiences and questions to the [Explorers Hub](https://discuss.newrelic.com) where our community members collaborate on solutions and new ideas.
-
->[Option 2 - thread in Community]
->New Relic hosts and moderates an online forum where customers can interact with New Relic employees as well as other customers to get help and share best practices. Like all official New Relic open source projects, there's a related Community topic in the New Relic Explorers Hub.
->You can find this project's topic/threads here: [URL for Community thread]
 
 ## Contributing
 
@@ -49,6 +47,5 @@ If you believe you have found a security vulnerability in this project or any of
 
 ## License
 
-[Project Name] is licensed under the [Apache 2.0](http://apache.org/licenses/LICENSE-2.0.txt) License.
+New Relic .Net Agent Instrumentation for Azure CosmosDB DocumentClient is licensed under the [Apache 2.0](http://apache.org/licenses/LICENSE-2.0.txt) License.
 
->[If applicable: [Project Name] also uses source code from third-party libraries. You can find full details on which libraries are used and the terms under which they are licensed in the third-party notices document.]
